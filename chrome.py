@@ -77,7 +77,7 @@ cursor4.execute("SELECT * FROM autofill")
 print("We've collected autofill info:")
 result1 = cursor4.fetchall() 
 for r6 in result1:
-	f6.writelines(str('\n' + r6[1]))
+	f6.writelines(str('\n' + r6[0] + ":       "+ r6[2]))
 
 f.close()
 f1.close()
